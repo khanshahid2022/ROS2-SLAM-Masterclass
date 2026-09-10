@@ -8,7 +8,7 @@ Welcome to the foundation installation module. In this lesson, we will deploy th
 
 To get complete graphical rendering and visual file tracking directly from Windows into our fresh Linux system layout:
 
-1. **Download VS Code:** If not already installed, download the official installer on your Windows system from [Visual Studio Code](https://visualstudio.com).
+1. **Download VS Code:** If not already installed, download the official installer on your Windows system from [Visual Studio Code Windows](https://visualstudio.com). 
 2. **Crucial Installation Tick:** During Windows installation, ensure you check the box that says **"Add to PATH"**.
 3. **Open Terminal:** Open your fresh Ubuntu 22.04 terminal screen window and type:
    ```bash
@@ -45,7 +45,7 @@ sudo add-apt-repository universe
 sudo apt update && sudo apt install curl -y
 sudo curl -sSL https://githubusercontent.com -o /usr/share/keyrings/ros-archive-keyring.gpg
 
-# 3. Add the official structural mirror repository down your apt sources list layout
+# 3. Add the structural mirror repository down your apt sources list layout
 echo "deb [arch=\$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://ros.org \((source /etc/os-release && echo\)UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 ```
 
