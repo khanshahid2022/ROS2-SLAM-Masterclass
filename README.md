@@ -1,6 +1,18 @@
 # ROS2-SLAM-Masterclass
 A complete ground-up, visual, graphic-intensive ROS2 and SLAM learning journey.
 
+# Installing Linux on your Windows
+Run this single command inside your Administrator PowerShell or Command Prompt (CMD) to clean install a fresh, stable Ubuntu engine on your Windows System.
+
+```Powershell
+wsl --install -d Ubuntu-22.04
+```
+
+What to expect next:
+- Windows will download and install the official Ubuntu 22.04 LTS kernel package.
+- A completely separate new terminal window will automatically pop open, displaying Installing, this may take a few minutes.... It will ask you to type a New Username and Password for your Linux system.
+- Write down whatever username and password you want (characters won't show on screen while typing passwords for security, just type it out and hit Enter).
+
 # 🐧 Phase 1: Linux Interactive Sandbox (Learn While Doing It)
 
 Welcome to the active sandbox training module. Do not just read—open your Ubuntu terminal window and execute this precise sequence to unlock your muscle memory.
