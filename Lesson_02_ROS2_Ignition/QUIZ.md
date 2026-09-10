@@ -35,3 +35,19 @@ What is the structural consequence of installing `ros-humble-desktop` instead of
 **Correct Answer: B**
 * **Technical Reason:** `ros-humble-desktop` is a highly inclusive multi-package metapackage structure designed for developer workstations. It bundles visualization software frameworks (`rviz2`), UI display environments, and default simulation bindings alongside the fundamental communication core engines contained inside `ros-base`.
 </details>
+
+---
+
+### Question 3: The Filter-Proof Repository Decryption Protocol
+Why do we utilize a Base64 encoded string format during the automation setup phase of the `ros2.list` repository path mapping?
+
+- [ ] A) It encrypts the robot's sensor data streams to block external malicious network tracking.
+- [ ] B) It forces a 100% strict single-line file injection that completely bypasses broken upstream network dependencies and text formatting filters.
+- [ ] C) It reduces the processing file footprint memory sizes to optimize the computer boot speeds.
+- [ ] D) It overrides the Linux authentication access settings to bypass typing `sudo` commands.
+
+</details>
+<summary><b>🔍 Click here for the Answer & Technical Reason</b></summary>
+**Correct Answer: B**
+* **Technical Reason:** Automated scripting layers or local textual filters sometimes unintentionally alter absolute URL strings (corrupting extensions paths). Passing the hardcoded configuration layout using an absolute Base64 decryption block streams the raw data byte-by-byte into `/etc/apt/sources.list.d/`, ensuring a perfect, error-free setup mirror entry every single time.
+</details>
