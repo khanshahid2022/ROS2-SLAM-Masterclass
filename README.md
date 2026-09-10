@@ -10,7 +10,7 @@ Follow the modules sequentially. Each folder contains its own interactive sandbo
 | :--- | :--- | :--- |
 | 📁 [Lesson_01_Linux_Sandbox](./Lesson_01_Linux_Sandbox/) | 80:20 Linux Command Matrix & File System Sandbox | 🟢 Active |
 | 📁 [Lesson_02_ROS2_Ignition](./Lesson_02_ROS2_Ignition/) | Fresh ROS2 Humble Core Installation & Verification | 🟢 Active |
-| 📁 `Lesson_03_Nodes_Communication` | Native Nodes, Topics Streams, and Dynamic Routing | ⏳ Upcoming |
+| 📁 [Lesson_03_Workspace_Architecture_And_Nodes](./Lesson_03_Workspace_Architecture_And_Nodes/) | Workspace Topology & Multi-Language Node Architecture | 🟢 Active |
 
 ---
 
