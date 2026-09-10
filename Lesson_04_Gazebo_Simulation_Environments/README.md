@@ -51,7 +51,7 @@ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 Open a brand-new second terminal window/tab inside VS Code, source the paths, and start the remote teleoperation execution tool to physically drive the robot inside the simulator:
 
 ```bash
-source install/setup.bash
+source ~/.bashrc
 ros2 run turtlebot3_teleop teleop_keyboard
 ```
 *Keep this terminal window active. Use the **W, A, S, D, X** keys on your keyboard to drive the virtual robot inside Gazebo! Watch how the physics engine calculates collision grids and movement friction instantly!*
