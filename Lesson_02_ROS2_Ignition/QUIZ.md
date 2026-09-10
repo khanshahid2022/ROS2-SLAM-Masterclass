@@ -48,6 +48,7 @@ Why do we utilize a Base64 encoded string format during the automation setup pha
 
 </details>
 <summary><b>🔍 Click here for the Answer & Technical Reason</b></summary>
+
 **Correct Answer: B**
 * **Technical Reason:** Automated scripting layers or local textual filters sometimes unintentionally alter absolute URL strings (corrupting extensions paths). Passing the hardcoded configuration layout using an absolute Base64 decryption block streams the raw data byte-by-byte into `/etc/apt/sources.list.d/`, ensuring a perfect, error-free setup mirror entry every single time.
 </details>
