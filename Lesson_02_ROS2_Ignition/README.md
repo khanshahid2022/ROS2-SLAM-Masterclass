@@ -83,6 +83,7 @@ To instantly prove your ROS2 engine is working perfectly without compilation bug
    ```
 2. **Open a New Terminal Tab and Launch a Subscriber Node (Listener):**
    ```bash
+   source ~/.bashrc
    ros2 run demo_nodes_py listener
    ```
 *If lines of text successfully publish and intercept across screens, your environment layer is officially 100% stable!*
