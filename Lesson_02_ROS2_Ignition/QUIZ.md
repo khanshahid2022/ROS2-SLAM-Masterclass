@@ -46,7 +46,7 @@ Why do we utilize a Base64 encoded string format during the automation setup pha
 - [ ] C) It reduces the processing file footprint memory sizes to optimize the computer boot speeds.
 - [ ] D) It overrides the Linux authentication access settings to bypass typing `sudo` commands.
 
-</details>
+<details>
 <summary><b>🔍 Click here for the Answer & Technical Reason</b></summary>
 
 **Correct Answer: B**
