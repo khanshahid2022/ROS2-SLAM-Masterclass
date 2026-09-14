@@ -145,7 +145,7 @@ rviz2
 
 Once the tools are running, perform these interactive moves sequentially to verify your structural setup:
 1. Inside the left panels tree of **RViz2**, locate the **Fixed Frame** field and change it from `map` to `base_footprint`.
-2. Click the **Add** button at the bottom-left panel, switch to the *By Display Type* index tab, select **RobotModel**, and click OK. Your custom blue box chassis alongside both black wheels will load instantly.
+2. Click the **Add** button at the bottom-left panel, switch to the *By Display Type* index tab, select **RobotModel**, and click OK, then click on dropdown icon and click on **Description Topic** as **/robot_description**. Your custom blue box chassis alongside both black wheels will load instantly.
 3. Click **Add** again, select **TF** (Transforms Frame Tree Display), and click OK.
 4. **Watch the Matrix Work:** Arrange the window interfaces side by side. Drag the sliders inside your **Joint State UI Panel**. You will see the coordinate axes of the wheel links actively spin live in RViz2, confirming that the continuous math matrices are tracking without errors!
 
