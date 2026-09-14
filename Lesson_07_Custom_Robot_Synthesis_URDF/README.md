@@ -20,8 +20,25 @@ sudo apt install ros-humble-joint-state-publisher-gui ros-humble-robot-state-pub
 
 ---
 
-## 🏗️ Step 2: Build a Custom URDF Manifest Blueprint
-Create a mock robot inside your custom package using the strict standard configuration below. Save this raw text as `custom_bot.urdf` inside your workspace directory layout:
+## 🏗️ Step 2: Initialize Package Topology & Build Custom URDF Manifest Blueprint
+To match our strict workspace directory layout rules, we will generate a dedicated configuration package inside our source tree before writing the raw XML structural framework data.
+
+### 1. Generate Description Package Workspace
+```bash
+# Navigate to the workspace source area and create a clean CMake description package
+cd ~/ros2_ws/src
+ros2 pkg create --build-type ament_cmake masterclass_description
+
+# Construct the dedicated internal URDF sub-module folder
+mkdir -p ~/ros2_ws/src/masterclass_description/urdf
+```
+
+### 2. Save the URDF Geometric Parameters File
+Create a new file named `custom_bot.urdf` inside your package layout:
+```bash
+code ~/ros2_ws/src/masterclass_description/urdf/custom_bot.urdf
+```
+Copy and paste this standard configuration directly inside `~/ros2_ws/src/masterclass_description/urdf/custom_bot.urdf`:
 
 ```xml
 <?xml version="1.0"?>
@@ -87,15 +104,15 @@ Create a mock robot inside your custom package using the strict standard configu
 To execute and inspect your custom kinematic frames tree across your system environment layers, manage these three dedicated terminal window spaces:
 
 ### 🏠 Terminal Tab 1: Ignite the Robot State Publisher Matrix
-This node parses the text-based XML URDF architecture file and systematically broadcasts structural frame coordinate calculations onto the `/tf` and `/tf_static` network buses:
+This node parses the text-based XML URDF architecture file from our exact package deployment path and systematically broadcasts structural frame coordinate calculations onto the `/tf` and `/tf_static` network buses:
 ```bash
 # Target Location Context Initialization
 cd ~/ros2_ws
 source ~/.bashrc
 
-# Run Core State Publisher Engine over raw URDF file
+# Run Core State Publisher Engine over the exact package deployment location path
 ros2 run robot_state_publisher robot_state_publisher \
-    --ros-args -p robot_description:="\$(cat ~/ROS2-SLAM-Masterclass/Lesson_07_Custom_Robot_Synthesis_URDF/custom_bot.urdf)"
+    --ros-args -p robot_description:="\$(cat ~/ros2_ws/src/masterclass_description/urdf/custom_bot.urdf)"
 ```
 *(Keep this active. It continuously outputs physical joint translation metrics down the communication layer).*
 
