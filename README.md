@@ -15,7 +15,8 @@ Follow the modules sequentially. Each folder contains its own interactive sandbo
 | 📁 [Lesson_05_SLAM_Toolbox_Mapping](./Lesson_05_Autonomous_SLAM_Toolbox_Mapping/) | Simultaneous Localization and Mapping (SLAM) Core Engine | 🟢 Active |
 | 📁 [Lesson_06_Autonomous_Navigation_Nav2](./Lesson_06_Autonomous_Navigation_Nav2/) | Path Planning, Costmaps, and Nav2 Stack Exploration | 🟢 Active |
 | 📁 [Lesson_07_Custom_Robot_Synthesis_URDF](./Lesson_07_Custom_Robot_Synthesis_URDF/) | Kinematic Tree Configurations & Visual Meshes Processing | 🟢 Active |
-| 📁 `Lesson_08_Sensor_Integration_Simulation` | Gazebo Sensor Plugins, Laser Plugins, & Telemetry Pipelines | ⏳ Upcoming |
+| 📁 [Lesson_08_Sensor_Integration_Simulation](./Lesson_08_Sensor_Integration_Simulation/) | Gazebo Sensor Plugins, Laser Plugins, & Telemetry Pipelines | 🟢 Active |
+| 📁 `Lesson_09_Visual_SLAM_Foundations` | Feature Extraction, Optical Flow, & Camera Matrix Calibration | ⏳ Upcoming |
 
 ---
 
