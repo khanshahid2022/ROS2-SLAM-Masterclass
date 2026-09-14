@@ -13,7 +13,8 @@ Follow the modules sequentially. Each folder contains its own interactive sandbo
 | 📁 [Lesson_02_ROS2_Ignition](./Lesson_02_ROS2_Ignition/) | Fresh ROS2 Humble Core Installation & Verification | 🟢 Active |
 | 📁 [Lesson_03_Workspace_Architecture_And_Nodes](./Lesson_03_Workspace_Architecture_And_Nodes/) | Workspace Topology & Multi-Language Node Architecture | 🟢 Active |
 | 📁 [Lesson_04_Gazebo_Simulation_Environments](./Lesson_04_Gazebo_Simulation_Environments/) | High-Performance 3D Simulation (Gazebo & Rviz Ignition) | 🟢 Active |
-| 📁 `Lesson_05_SLAM_Toolbox_Mapping` | Simultaneous Localization and Mapping (SLAM) Core Engine | ⏳ Upcoming |
+| 📁 [Lesson_05_SLAM_Toolbox_Mapping](./Lesson_05_Autonomous_SLAM_Toolbox_Mapping/) | Simultaneous Localization and Mapping (SLAM) Core Engine | 🟢 Active |
+| 📁 `Lesson_06_Autonomous_Navigation_Nav2` | Path Planning, Costmaps, and Nav2 Stack Exploration | ⏳ Upcoming |
 
 ---
 
