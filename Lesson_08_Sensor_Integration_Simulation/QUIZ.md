@@ -1,4 +1,3 @@
-```markdown
 # 📝 Lesson 08: Sensor Integration & Simulation Plugins Operations Assessment
 Evaluate your structural understanding of Gazebo ROS plugins, ray-tracing laser parameters, and differential driver telemetry loops.
 
