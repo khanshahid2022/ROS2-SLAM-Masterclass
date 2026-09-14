@@ -84,3 +84,42 @@ ros2 run nav2_map_server map_saver_cli -f ~/ros2_ws/src/my_first_robot_map
 *Look inside your file tree directory (`src/`)! The software engine has auto-generated two critical production file components:*
 - `my_first_robot_map.pgm`: A raw grayscale graphic matrix image showing your walls and open floor paths.
 - `my_first_robot_map.yaml`: The spatial parameter file defining precise scaling dimensions metric ratios (e.g., origin point, pixel resolution).
+
+---
+
+## 🔍 Step 4: Visualize the Generated Occupancy Grid Map
+
+Since the `.pgm` (Portable Graymap) file format stores raw binary image matrices rather than human-readable text syntax data fields, opening it directly inside the default VS Code text editor layout will trigger a binary format warning alert. 
+
+Choose one of the following validated integration strategies to visually review your generated structural environmental blueprints:
+
+### Strategy A: Seamless Internal Integration (VS Code Marketplace Extensions)
+The fastest, lightweight execution methodology to track spatial data directly inside your IDE without spinning up heavy system application overhead layers:
+1. Navigate directly into the **VS Code Extensions Activity Bar Panel** (`Ctrl + Shift + X`).
+2. Populate the interface search context field using the string query: `PBM/PPM/PGM Viewer` or `Image Preview`.
+3. Select and trigger the extension **Install** processing operation script handle.
+4. Return back to your native file workspace directory browser view node hierarchy and double-click the `my_first_robot_map.pgm` asset bundle item. The application interface layer will cleanly decode the geometric layout arrays structure dynamically inside an editor canvas panel.
+
+### Strategy B: Native System Terminals Visualization (Ubuntu Utility Packages)
+Execute binary graphic processing directly over your localized shell runtime environments by invoking specialized command interfaces:
+
+* **Method 1: ImageMagick CLI Canvas Injection Engine**
+  Install the industrial binary engine and execute the targeted image rendering script over the localized path layout coordinates structure field:
+  ```bash
+  # Synchronize software lists and deploy utility layer dependencies
+  sudo apt update && sudo apt install imagemagick -y
+
+  # Launch structural preview canvas interface directly targeted over target directory assets
+  display ~/ros2_ws/src/my_first_robot_map.pgm
+  ```
+
+* **Method 2: Native Eye of GNOME Graphical User Interface Engine**
+  Deploy and trigger the default GNOME desktop structural layout visualization node architecture window directly from the shell terminal layer context environment tracker parameters:
+  ```bash
+  # Deploy standard platform graphic window framework utility layers
+  sudo apt install eog -y
+
+  # Launch isolated standalone GUI display frame context window profile
+  eog ~/ros2_ws/src/my_first_robot_map.pgm
+  ```
+  *(Note: Strategy B operations require an active Windows Subsystem for Linux (WSLg) GUI graphics server background execution pipe profile layout state to prevent localized `Unable to open display X server` process initialization drops).*
