@@ -16,7 +16,8 @@ Follow the modules sequentially. Each folder contains its own interactive sandbo
 | 📁 [Lesson_06_Autonomous_Navigation_Nav2](./Lesson_06_Autonomous_Navigation_Nav2/) | Path Planning, Costmaps, and Nav2 Stack Exploration | 🟢 Active |
 | 📁 [Lesson_07_Custom_Robot_Synthesis_URDF](./Lesson_07_Custom_Robot_Synthesis_URDF/) | Kinematic Tree Configurations & Visual Meshes Processing | 🟢 Active |
 | 📁 [Lesson_08_Sensor_Integration_Simulation](./Lesson_08_Sensor_Integration_Simulation/) | Gazebo Sensor Plugins, Laser Plugins, & Telemetry Pipelines | 🟢 Active |
-| 📁 `Lesson_09_Visual_SLAM_Foundations` | Feature Extraction, Optical Flow, & Camera Matrix Calibration | ⏳ Upcoming |
+| 📁 [Lesson_09_Visual_SLAM_Foundations](./Lesson_09_Visual_SLAM_Foundations/) | Feature Extraction, Optical Flow, & Camera Matrix Calibration | 🟢 Active |
+| 📁 `Lesson_10_Visual_Odometry_Pose_Estimation` | Epipolar Geometry, Essential Matrix, & Perspective-n-Point | ⏳ Upcoming |
 
 ---
 
