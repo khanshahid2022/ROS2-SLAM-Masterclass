@@ -6,7 +6,6 @@ Welcome to the ultimate, ground-up, visual, and graphic-intensive ROS2 and SLAM 
 
 Follow the modules sequentially. Each folder contains its own interactive sandbox manuals, clear step-by-step documentation, supporting assets, and performance verification quizzes.
 
-
 | Module Directory | Core Technical Training focus | Status |
 | :--- | :--- | :--- |
 | 📁 [Lesson_01_Linux_Sandbox](./Lesson_01_Linux_Sandbox/) | 80:20 Linux Command Matrix & File System Sandbox | 🟢 Active |
@@ -14,7 +13,8 @@ Follow the modules sequentially. Each folder contains its own interactive sandbo
 | 📁 [Lesson_03_Workspace_Architecture_And_Nodes](./Lesson_03_Workspace_Architecture_And_Nodes/) | Workspace Topology & Multi-Language Node Architecture | 🟢 Active |
 | 📁 [Lesson_04_Gazebo_Simulation_Environments](./Lesson_04_Gazebo_Simulation_Environments/) | High-Performance 3D Simulation (Gazebo & Rviz Ignition) | 🟢 Active |
 | 📁 [Lesson_05_SLAM_Toolbox_Mapping](./Lesson_05_Autonomous_SLAM_Toolbox_Mapping/) | Simultaneous Localization and Mapping (SLAM) Core Engine | 🟢 Active |
-| 📁 `Lesson_06_Autonomous_Navigation_Nav2` | Path Planning, Costmaps, and Nav2 Stack Exploration | ⏳ Upcoming |
+| 📁 [Lesson_06_Autonomous_Navigation_Nav2](./Lesson_06_Autonomous_Navigation_Nav2/) | Path Planning, Costmaps, and Nav2 Stack Exploration | 🟢 Active |
+| 📁 `Lesson_07_Custom_Robot_Synthesis_URDF` | Kinematic Tree Configurations & Visual Meshes Processing | ⏳ Upcoming |
 
 ---
 
