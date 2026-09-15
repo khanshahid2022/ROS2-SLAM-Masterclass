@@ -174,9 +174,9 @@ ros2 launch gazebo_ros gazebo.launch.py
 cd ~/ros2_ws
 source ~/.bashrc
 
-# 1. Update active Robot Description state parameters down the network (Fixed Backslash)
+# 1. Update active Robot Description state parameters down the network
 ros2 run robot_state_publisher robot_state_publisher \
-    --ros-args -p robot_description:="\$(cat ~/ros2_ws/src/masterclass_description/urdf/custom_bot.urdf)" &
+    --ros-args -p robot_description:="$(cat ~/ros2_ws/src/masterclass_description/urdf/custom_bot.urdf)" &
 
 # 2. Wait 5 seconds to ensure the network node is fully up and running
 sleep 5
