@@ -174,17 +174,19 @@ ros2 launch gazebo_ros gazebo.launch.py
 cd ~/ros2_ws
 source ~/.bashrc
 
-# 1. Update active Robot Description state parameters down the network
+# 1. Update active Robot Description state parameters down the network (Fixed Backslash)
 ros2 run robot_state_publisher robot_state_publisher \
     --ros-args -p robot_description:="\$(cat ~/ros2_ws/src/masterclass_description/urdf/custom_bot.urdf)" &
 
-# 2. Spawn the custom camera-enabled model into the physics room
-sleep 2
+# 2. Wait 5 seconds to ensure the network node is fully up and running
+sleep 5
+
+# 3. Spawn the custom camera-enabled model into the physics room
 ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity custom_masterclass_bot
 ```
 
 ### 👁️ Terminal Tab 3: Launch Custom Visual Frontend Node
-Run our custom computer vision node to intercept the video arrays and compute spatial tracking tracking corners:
+Run our custom computer vision node to intercept the video arrays and compute spatial tracking corners:
 ```bash
 # Target Location Context Initialization
 cd ~/ros2_ws
@@ -204,6 +206,7 @@ source ~/.bashrc
 
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
+
 
 ---
 
