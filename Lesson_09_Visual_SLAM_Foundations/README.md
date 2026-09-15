@@ -108,13 +108,13 @@ class VisualSLAMFrontend(Node):
         # Setup standard image message subscription topic tracking
         self.subscription = self.create_subscription(
             Image,
-            '/camera/image_raw',
+            '/masterclass_camera/image_raw',
             self.image_callback,
             10)
         self.br = CvBridge()
         # Initialize industrial-grade ORB feature tracking object layout
         self.orb = cv2.ORB_create(nfeatures=500)
-        self.get_logger().info('Visual SLAM Frontend initialized cleanly. Extracting ORB arrays...')
+        self.get_logger().info('Visual SLAM Frontend active. Processing matrix frames...')
 
     def image_callback(self, data):
         # Convert raw ROS image bytes into an OpenCV matrix image frame
@@ -131,7 +131,7 @@ class VisualSLAMFrontend(Node):
         
         # Display the visual feedback window to the workstation user interface
         cv2.imshow("ORB Visual Tracking Matrix", output_frame)
-        cv2.waitKey(1)
+        cv2.waitKey(30)
 
 def main(args=None):
     rclpy.init(args=args)
@@ -166,7 +166,12 @@ source ~/.bashrc
 # Deploy standard Gazebo simulation space
 ros2 launch gazebo_ros gazebo.launch.py
 ```
-*(Wait until the grid window prints out stable logs).*
+
+> ⚠️ **CRITICAL STEP FOR VISUAL SLAM EXTRACTOR:**
+> Once the empty Gazebo grid simulation finishes loading, you **MUST** insert manual texturing landmarks into the empty room. 
+> 1. Go to the top toolbar menu panel and select geometric primitives: **Cube**, **Sphere**, or **Cylinder**.
+> 2. Click and drop at least 2–3 items directly onto the ground layout plane near the coordinate center.
+> *Reason: Feature detectors like ORB require high-contrast physical edges and surface patterns to isolate mathematical tracking coordinates. A default blank grey scene will extract zero keypoints.*
 
 ### 📦 Terminal Tab 2: Broadcast Description & Spawn Chassis
 ```bash
@@ -186,7 +191,7 @@ ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity custom_mast
 ```
 
 ### 👁️ Terminal Tab 3: Launch Custom Visual Frontend Node
-Run our custom computer vision node to intercept the video arrays and compute spatial tracking corners:
+Run our custom computer vision node to intercept the video arrays and compute spatial tracking tracking corners:
 ```bash
 # Target Location Context Initialization
 cd ~/ros2_ws
@@ -207,21 +212,19 @@ source ~/.bashrc
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
 
-
 ---
 
-## 🔬 Step 5: Cross-Audit Sensor Telemetry Arrays (Terminal Tab 4 Check)
-Open a fourth terminal window to ensure that the integrated internal simulation plugins are broadcasting data correctly over the communication layers:
+## 🔬 Step 5: Cross-Audit Sensor Telemetry Arrays (Terminal Tab 5 Check)
+Open a fifth terminal window to ensure that the integrated internal simulation plugins are broadcasting data correctly over the communication layers:
 
 ### 1. Verify Active Camera Array Ingestion Streams
 ```bash
 source ~/.bashrc
-ros2 topic echo /camera/camera_info --once
+ros2 topic echo /masterclass_camera/camera_info --once
 ```
 *You will see the image width, image height, and the 3x3 **Camera Intrinsic Matrix ($K$) array parameters** outputting metrics defining the lens center offset constants.*
 
 ### 2. Inspect Raw Image Matrix Topic Updates
 ```bash
-ros2 topic hz /camera/image_raw
+ros2 topic hz /masterclass_camera/image_raw
 ```
-*You will verify the image frequency loop updates are maintaining a stable bandwidth distribution stream near 30Hz.*
