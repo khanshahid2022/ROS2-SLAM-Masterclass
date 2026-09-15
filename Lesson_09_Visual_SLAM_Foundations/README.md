@@ -219,6 +219,7 @@ Open a fifth terminal window to ensure that the integrated internal simulation p
 
 ### 1. Verify Active Camera Array Ingestion Streams
 ```bash
+cd ~/ros2_ws
 source ~/.bashrc
 ros2 topic echo /masterclass_camera/camera_info --once
 ```
