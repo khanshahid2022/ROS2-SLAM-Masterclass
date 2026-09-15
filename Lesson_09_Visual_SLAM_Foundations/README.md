@@ -15,7 +15,7 @@ To manipulate advanced image matrices and calculate OpenCV matching pipelines sm
 ```bash
 cd ~/ros2_ws
 sudo apt update
-sudo apt install ros-humble-opencv-tests ros-humble-vision-opencv python3-opencv -y
+sudo apt install ros-humble-vision-opencv python3-opencv -y
 ```
 
 ---
