@@ -17,7 +17,8 @@ Follow the modules sequentially. Each folder contains its own interactive sandbo
 | 📁 [Lesson_07_Custom_Robot_Synthesis_URDF](./Lesson_07_Custom_Robot_Synthesis_URDF/) | Kinematic Tree Configurations & Visual Meshes Processing | 🟢 Active |
 | 📁 [Lesson_08_Sensor_Integration_Simulation](./Lesson_08_Sensor_Integration_Simulation/) | Gazebo Sensor Plugins, Laser Plugins, & Telemetry Pipelines | 🟢 Active |
 | 📁 [Lesson_09_Visual_SLAM_Foundations](./Lesson_09_Visual_SLAM_Foundations/) | Feature Extraction, Optical Flow, & Camera Matrix Calibration | 🟢 Active |
-| 📁 `Lesson_10_Visual_Odometry_Pose_Estimation` | Epipolar Geometry, Essential Matrix, & Perspective-n-Point | ⏳ Upcoming |
+| 📁 [Lesson_10_Visual_Odometry_Pose_Estimation](./Lesson_10_Visual_Odometry_Pose_Estimation/) | Epipolar Geometry, Essential Matrix, & Relative Motion Matrices | 🟢 Active |
+| 📁 `Lesson_11_Backend_Optimization_Graph_SLAM` | Factor Graphs, g2o Framework, Loop Closures, & Information Matrices | ⏳ Upcoming |
 
 ---
 
