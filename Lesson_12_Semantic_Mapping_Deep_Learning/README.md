@@ -16,7 +16,19 @@ To run real-time neural network inference and process localized image arrays smo
 cd ~/ros2_ws
 sudo apt update
 sudo apt install python3-pip ros-humble-vision-opencv -y
-pip3 install ultralytics opencv-python numpy
+```
+
+```bash
+# Install YOLO and PyTorch dependencies safely without overriding system OpenCV
+pip3 install ultralytics --no-deps
+pip3 install torch torchvision
+pip3 install cloudpickle ultralytics-thop polars nvidia-ml-py
+```
+
+```bash
+# Prevent colcon build issues by locking down compatible version constraints
+pip3 install "setuptools<80"
+
 ```
 
 ---
