@@ -21,7 +21,13 @@ sudo apt install python3-pip ros-humble-vision-opencv -y
 ```bash
 # Install YOLO and PyTorch dependencies safely without overriding system OpenCV
 pip3 install ultralytics --no-deps
+```
+
+```bash
 pip3 install torch torchvision
+```
+
+```bash
 pip3 install cloudpickle ultralytics-thop polars nvidia-ml-py
 ```
 
