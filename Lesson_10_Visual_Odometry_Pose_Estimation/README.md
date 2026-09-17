@@ -200,23 +200,23 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 ---
 
-## 🏗️ Step 4: Deploying Spatial Objects & Watching the Vision Matrix Magic
+## 🏗️ Step 4: Deploying Spatial Objects & Witnessing the Vision Matrix Magic
 
-Jab aap pehli baar **Terminal Tab 3** ke node execution engine script ko run karenge, tab aapko screen context par direct koi alag visual tracking tracking window popup hota hua nahi dikhega. 
+When you first ignite the core execution script in **Terminal Tab 3**, you will notice that no graphical tracking window pops up immediately on your display. 
 
-Aapko lag raha hoga ki yaha to koi computer vision jaisa tracking pipeline execution engine process hi nahi ho raha hai. Lekin yahi real-world Visual SLAM algorithms ka absolute core mathematical filter mechanism hai! **The system demands features to process spatial variables.**
+You might initially assume that the computer vision pipeline is frozen or failing to execute. However, this silent state is actually the mathematical core of Visual SLAM working exactly as designed! **The algorithm demands visual feature variance to process spatial transformations.** Because a default empty Gazebo world contains a perfectly uniform, plain grey plane, the spatial gradient variance is absolute zero, causing the feature descriptor loops to hold execution.
 
-Ab real magic dekhne ke liye apne physics simulator workstation setup ko side-by-side scale kijiye aur ye visual moves execute kijiye:
+To witness the real-world tracking matrix snap to life, arrange your workstation windows side-by-side and execute these exact visual steps:
 
 ### 1. Dynamic Environment Landscape Ingestion
-1. Apne **Gazebo Simulator window** ko frame control foreground me laiye.
-2. Top horizontal navigation menu control utility toolbar par jajiye aur geometric solid shapes ko select kijiye: **Cube ◼️**, **Sphere 🔮**, ya **Cylinder 🧪**.
-3. In parameters object shapes ko drag karke robot ke visual camera module sensor range spectrum ke path layers me drop karna shuru kijiye (Chassis assembly ke strict alignment view blocks ke exact samne).
+1. Bring your active **Gazebo Simulator window** into the desktop foreground focus.
+2. Navigate to the top horizontal primitive toolbar and select a geometric object: **Cube ◼️**, **Sphere 🔮**, or **Cylinder 🧪**.
+3. Drag and drop at least 3 to 4 of these shapes directly onto the floor grid plane, placing them within the immediate line-of-sight tracking path of your robot's front camera link.
 
-### 2. The Matrix Awakening Activation Loop
-* **The Instant Trigger:** Jaise hi aap robot ke optical camera target fields ke safe visibility parameter regions me pehla object block mount karenge, tracking software logic live structural lines cross-match framework build kar lega.
-* **Tracking Display Engine Ignition:** Ek clean window pop-up call call engine ignite hoga jiska layout label name hoga: **"Epipolar Geometric Feature Tracking Matrix"**. Niche control terminal tab me live trajectory estimation array feedback metrics transform hona start ho jayenge!
-* **The Reality Check Observation:** Agar robot move karte hue kisi bilkul plain space matrix ya blank flat grey texture boundaries area ke samne aayega jaha koi structural patterns ya obstacles absent hain, to processing frames visualization system instantly freeze/stop ho jayega. Yeh tabhi reactive update cycle trace karta hai jab physical links machine ke optical center frames me active spatial objects input nodes update kar rahe hon!
+### 2. The Visual Matrix Awakening Loop
+* **The Instant Trigger:** The microsecond the robot’s optical sensor sweeps past a high-contrast physical edge or geometric surface pattern, the FLANN matcher will instantly lock onto the landmarks.
+* **Tracking Window Pop-up:** A standalone visualization window titled **"Epipolar Geometric Feature Tracking Matrix"** will automatically spring onto your desktop, rendering live, multi-colored tracking lines connecting matching pixels across frames.
+* **The Static Environment Freeze Observation:** If you teleoperate the robot away from these objects into a completely blank space or bare featureless walls, the tracking viewer window will instantly freeze or stop updates. This elegantly proves the real-world principle of Visual Odometry: it remains reactive *only* when the environment provides sufficient visual features to compute structural tracking matrices!
 
 ---
 
