@@ -19,7 +19,7 @@ Follow the modules sequentially. Each folder contains its own interactive sandbo
 | 📁 [Lesson_09_Visual_SLAM_Foundations](./Lesson_09_Visual_SLAM_Foundations/) | Feature Extraction, Optical Flow, & Camera Matrix Calibration | 🟢 Active |
 | 📁 [Lesson_10_Visual_Odometry_Pose_Estimation](./Lesson_10_Visual_Odometry_Pose_Estimation/) | Epipolar Geometry, Essential Matrix, & Relative Motion Matrices | 🟢 Active |
 | 📁 [Lesson_11_Backend_Optimization_Graph_SLAM](./Lesson_11_Backend_Optimization_Graph_SLAM/) | Factor Graphs, Least-Squares Optimizers, & Loop Closures | 🟢 Active |
-| 📁 `Lesson_12_Semantic_Mapping_Deep_Learning` | YOLO Object Detection Integration, 3D Bounding Boxes, & Octomap | ⏳ Upcoming |
+| 📁 [Lesson_12_Semantic_Mapping_Deep_Learning](./Lesson_12_Semantic_Mapping_Deep_Learning/) | YOLO Object Detection Integration, 3D Bounding Boxes, & AI Mapping | 🟢 Active |
 
 ---
 
