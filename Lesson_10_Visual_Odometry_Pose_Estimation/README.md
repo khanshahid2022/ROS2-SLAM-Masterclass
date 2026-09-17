@@ -200,4 +200,34 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 ---
 
-## 🔬 Step 4: Cross-Audit Motion Matrix Telemetry Vectors (Terminal Tab 3 Log Inspection)
+## 🏗️ Step 4: Deploying Spatial Objects & Watching the Vision Matrix Magic
+
+Jab aap pehli baar **Terminal Tab 3** ke node execution engine script ko run karenge, tab aapko screen context par direct koi alag visual tracking tracking window popup hota hua nahi dikhega. 
+
+Aapko lag raha hoga ki yaha to koi computer vision jaisa tracking pipeline execution engine process hi nahi ho raha hai. Lekin yahi real-world Visual SLAM algorithms ka absolute core mathematical filter mechanism hai! **The system demands features to process spatial variables.**
+
+Ab real magic dekhne ke liye apne physics simulator workstation setup ko side-by-side scale kijiye aur ye visual moves execute kijiye:
+
+### 1. Dynamic Environment Landscape Ingestion
+1. Apne **Gazebo Simulator window** ko frame control foreground me laiye.
+2. Top horizontal navigation menu control utility toolbar par jajiye aur geometric solid shapes ko select kijiye: **Cube ◼️**, **Sphere 🔮**, ya **Cylinder 🧪**.
+3. In parameters object shapes ko drag karke robot ke visual camera module sensor range spectrum ke path layers me drop karna shuru kijiye (Chassis assembly ke strict alignment view blocks ke exact samne).
+
+### 2. The Matrix Awakening Activation Loop
+* **The Instant Trigger:** Jaise hi aap robot ke optical camera target fields ke safe visibility parameter regions me pehla object block mount karenge, tracking software logic live structural lines cross-match framework build kar lega.
+* **Tracking Display Engine Ignition:** Ek clean window pop-up call call engine ignite hoga jiska layout label name hoga: **"Epipolar Geometric Feature Tracking Matrix"**. Niche control terminal tab me live trajectory estimation array feedback metrics transform hona start ho jayenge!
+* **The Reality Check Observation:** Agar robot move karte hue kisi bilkul plain space matrix ya blank flat grey texture boundaries area ke samne aayega jaha koi structural patterns ya obstacles absent hain, to processing frames visualization system instantly freeze/stop ho jayega. Yeh tabhi reactive update cycle trace karta hai jab physical links machine ke optical center frames me active spatial objects input nodes update kar rahe hon!
+
+---
+
+## 🔬 Step 5: Cross-Audit Motion Matrix Telemetry Vectors (Terminal Tab 3 Log Inspection)
+
+Look directly at the log streams printing out inside your active **Terminal Tab 3** interface as you drive the vehicle using your keyboard tracking inputs. Verify that the tracking backend is running geometric equations correctly without throwing runtime exceptions:
+
+### 1. Verify Inter-Frame Rotation and Translation Calculations
+```text
+[INFO] [visual_odometry]: VO Motion Captured -> Yaw Delta:  -0.10° | dx: -0.035 | dz:  0.999
+[INFO] [visual_odometry]: VO Motion Captured -> Yaw Delta:  -0.20° | dx:  0.436 | dz:  0.900
+```
+*You will cleanly verify the structural `Yaw Delta` output values matching your rotation adjustments along with normalized `dx` and `dz` spatial translation vector directions. This proves that the underlying Epipolar Matrix solver is extracting physical relative movements completely from raw image data arrays.*
+
