@@ -21,7 +21,8 @@ Follow the modules sequentially. Each folder contains its own interactive sandbo
 | 📁 [Lesson_11_Backend_Optimization_Graph_SLAM](./Lesson_11_Backend_Optimization_Graph_SLAM/) | Factor Graphs, Least-Squares Optimizers, & Loop Closures | 🟢 Active |
 | 📁 [Lesson_12_Semantic_Mapping_Deep_Learning](./Lesson_12_Semantic_Mapping_Deep_Learning/) | YOLO Object Detection Integration, 3D Bounding Boxes, & AI Mapping | 🟢 Active |
 | 📁 [Lesson_13_Integrated_AI_Autonomous_Navigation_Project](./Lesson_13_Integrated_AI_Autonomous_Navigation_Project/) | Unified Master Python Launch Harness & Capstone Evaluation | 🟢 Active |
-| 📁 `Lesson_14_Isaac_Sim_Omniverse_Migration` | High-Fidelity Physics, USD Scene Processing, & Advanced Nav2 Bridging | ⏳ Upcoming |
+| 📁 [Lesson_14_Autonomous_Nav2_Custom_Blender_World](./Lesson_14_Autonomous_Nav2_Custom_Blender_World/) | A* Path Planning, Layered Costmaps & Unsupervised Navigation | 🟢 Active |
+| 📁 `Lesson_15_Isaac_Sim_Omniverse_Migration` | High-Fidelity Physics, USD Scene Processing, & Advanced Nav2 Bridging | ⏳ Upcoming |
 
 ---
 
